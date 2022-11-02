@@ -68,6 +68,14 @@ Essa documentação tem como intuito ser uma documentação aberta para o ensino
 
 <br><hr><br>
 <h1> Aprofundando nos nodos</h1>
+
+<h2>Catch</h2>
+<img width=300 src="https://nodered.org/docs/user-guide/images/node_catch.png">
+<p> O nodo de Catch funciona como a lógica try catch de programação, ele fica observando um ou mais nodos e quando ocorre um erro em um ou mais nodos que ele tenha sido configurado para observar, ele ira realizar uma injeção com payload de erro em um outro nodo.</p>
+<p><b>Exemplo:</b>
+Você tem um fluxo que se falhar você precisa reverter algumas coisas, então coloca um nodo de catch observando o nodo que pdoe falhar, se a falhar ocorrer ele realiza uma injeção em um outro nodo que é responsável por reverter o que é necessário.
+</p>
+
 <h2>Switch</h2>
 <img width=300 src="https://nodered.org/docs/user-guide/images/node_switch.png">
 <p> O nodo de Switch funciona como o tradicional Switch lógico, dentro dele você pode realizar diversas comparações com o conteúdo do payload que ele recebe, e com base nessas comparações redirecionar o payload para um nodo especifico.</p>
